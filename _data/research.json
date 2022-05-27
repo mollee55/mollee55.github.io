@@ -1,0 +1,49 @@
+{
+    "title": "Research",
+    "subtitle": "Research Projects",
+    "show-subtitle": false,
+    "page-link-prefix": "/research/",
+    "image-prefix": "/assets/images/research/",
+    "projects": [
+        {
+            "title": "Master's Thesis",
+            "display-title": "Master's Thesis: A Comparison Between Quantum Communication and Molecular Communication",
+            "language": "MATLAB",
+            "project-image": "masters_thesis.jpg",
+            "research-lab-website": "https://mbite.unl.edu/",
+            "project-article-website": "https://news.unl.edu/newsrooms/today/article/wetcomm-project-expands-bioengineering-stem-opportunities/",
+            "roles": "Research, Analysis, Writing, Developing MATLAB Code and Plots",
+            "actively-researching": "No",
+            "hidden": false,
+            "show-github-link": false
+        },
+        {
+            "title": "Quantum Tunneling Times",
+            "language": "Mathematica, Theoretical Quantum Physics",
+            "project-image": "https://www.frontiersin.org/files/Articles/187666/fphy-04-00010-HTML-r2/image_m/fphy-04-00010-g003.jpg",
+            "external-image": true,
+            "department-website": "https://www.concordiacollege.edu/academics/programs-of-study/physics/",
+            "roles": "Research, Analysis",
+            "actively-researching": "No",
+            "hidden": true
+        },
+        {
+            "title": "Double General Point Interactions",
+            "language": "Mathematica, Theoretical Quantum Physics",
+            "project-image": "double_general_point_interactions.png",
+            "research-paper-link": "https://www.frontiersin.org/articles/10.3389/fphy.2016.00010/full",
+            "roles": "Research, Analysis, Theoretical Mathematical Physics, Wolfram Mathematica",
+            "actively-researching": "No",
+            "hidden": false
+        },
+        {
+            "title": "Hartman Effect",
+            "language": "Mathematica, Theoretical Quantum Physics",
+            "project-image": "hartman_effect.png",
+            "research-paper-link": "https://iopscience.iop.org/article/10.1088/1742-6596/574/1/012066",
+            "roles": "Research, Analysis, Theoretical Mathematical Physics, Wolfram Mathematica",
+            "actively-researching": "No",
+            "hidden": false
+        }
+    ]
+}

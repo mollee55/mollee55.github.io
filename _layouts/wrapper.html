@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/media-query.css" />
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        <div id="home"></div>
+
+        <div id="navbar">
+            <ul>
+                <li><a href="/index#home">Home</a></li>
+                <li><a href="/index#game-dev">Game Dev</a></li>
+                <li><a href="/index#research">Research</a></li>
+            </ul>
+        </div>
+
+        <div id="outerwrapper">
+            <div id="header-content">
+                <h1>{{ site.title }}</h1>
+                <div id="header-image">
+                    {% assign profile_image= site.title | replace: " ", "_" | replace: "!", "" | replace: ".", "" | replace: ",", "" | append: ".jpg" | downcase %}
+                    <img src="/assets/images/{{ profile_image }}" alt=""> 
+                </div>
+                <p>Hi! I am a Technology Analyst at Accenture, currently working as a backend software developer for electric vehicles on a client project. I received my Master's of Science in Computer Science from the University of Nebraska-Lincoln in 2020 and my Bachelor's of Arts in Mathematics and Physics in 2016.
+                <br> <br>
+                <p>My interests include software development, game development, and quantum research. Please see the links below for my Resume, GitHub profile, and Itch.io profile. Check out the rest of my website to see my game development and research projects!</p>
+
+                <ul>
+                    {% assign resume = site.title | replace: " ", "_" | replace: "!", "" | replace: ".", "" | replace: ",", "" | append: "_Resume.pdf" %}
+                    <li><a href="/assets/documents/{{ resume }}" target="_blank">Resume</a></li>
+                    <li><a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a></li>
+                    <li><a href="https://{{ site.itch_username }}.itch.io" target="_blank">Itch.io</a></li>
+                </ul>
+            </div>
+            
+            {{ content }}
+        </div>
+    </body>
+</html>
