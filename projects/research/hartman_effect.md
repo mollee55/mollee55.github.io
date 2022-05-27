@@ -1,0 +1,8 @@
+---
+layout: project
+title: "Hartman Effect"
+type: "research"
+permalink: research/hartman_effect.html
+what_i_learned: "The research leading up to this paper was my first exposure to in-depth quantum physics and quantum tunneling times research. I participated in this research as part of the NASA Space Grant the summer after my freshman year of college. While researching quantum tunneling times, I learned about mathematical theoretical physics, how quantum tunneling works, and more specifically, how to calculate two different types of quantum tunneling times for symmetric double-barrier point potentials. I also learned about the Hartman effect and in which cases it is present."
+---
+In our paper, "On the generalized Hartman effect for symmetric double-barrier point potentials," my research colleagues and I focus on quantum tunneling times. More specifically, my research collegues and I discuss the scattering of a non-relativistic particle by a symmetrical arrangement of two identical barriers in one-dimension. We calculate the phase time and the Salecker-Wigner-Peres (SWP) clock time for two cases: a double delta barrier and a double delta prime barrier. We investigae the off-resonance behavior of these time scales in the limit of opaque barriers. While investigating this limit, we address the question of the emergence of the generalized Hartman effect, which is the generally accepted idea that the tunneling time of a quantum particle between two successive behaviors does not depend on the separation distance between the barriers. We conclude that it appears that the transmission phase time presents the generalized Hartman effect, but the SWP clock time does not present such an effect.

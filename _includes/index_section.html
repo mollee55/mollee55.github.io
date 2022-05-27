@@ -1,0 +1,28 @@
+<div class="section">
+    <h1>{{ include.section-data.title }}</h1>
+
+    {% if include.section-data.show-subtitle %}
+        <h2>{{ include.section-data.subtitle }}</h2>
+    {% endif %}
+    
+    <div class="section-projects">
+        {% for item in include.section-data.projects %}
+            {% if item.hidden == false %}
+                <div>
+                    <a href="{{ include.section-data.page-link-prefix }}{{ item.title | downcase | replace: " ", "_" | replace: "!", "" | replace: ".", "" | replace: ",", "" | replace: "'", "" }}.html" title="{{ item.title }}">
+                        <figure>
+                            {% if item.external-image %}
+                                <img src="{{ item.project-image }}" alt="{{ item.title }}" title="{{ item.title }}">
+                            {% elsif item.project-image %}
+                                <img src="{{ include.section-data.image-prefix }}{{ item.project-image }}" alt="{{ item.title }}" title="{{ item.title }}">
+                            {% else %}
+                                <img src="{{ include.section-data.image-prefix }}{{ item.title | downcase | replace: " ", "_" | replace: "!", "" | replace: ".", "" | replace: ",", "" }}.png" alt="{{ item.title }}" title="{{ item.title }}">
+                            {% endif %}
+                        </figure>
+                        <span>{{ item.title }} ({{ item.language }})</span>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
